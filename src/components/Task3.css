@@ -1,0 +1,46 @@
+*{
+    font-family: Montserrat, sans-serif;
+}
+
+.task3-container {
+    background: var(--bijela);
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+    text-align: center;
+
+    object-fit: contain;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.container{
+    width: 960px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+@media screen and (max-width: 960px) {
+    .container{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+    }
+
+}

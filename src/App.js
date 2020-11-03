@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+import React from 'react';
+import Navbar from './components/Navbar';
+
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
+import Home from './components/stranice/Home';
+import Task3 from './components/Task3';
+import Task4 from './components/Task4';
+import Task5 from './components/Task5';
+
+
+
 
 function App() {
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+        <Router>
+            <Navbar />
+
+
+                <Route path='/' exact component={Home}/>
+                <Route path='/task3' component={Task3}/>
+                <Route path='/task4' component={Task4}/>
+                <Route path='/task5' component={Task5}/>
+
+        </Router>
+
+      </>
+
   );
 }
 

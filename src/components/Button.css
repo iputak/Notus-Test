@@ -1,0 +1,33 @@
+.btn{
+    padding: 8px 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn--solid{
+    background-color: var(--narancasta);
+    color: var(--bijela);
+    border: var(--narancasta);
+}
+
+.btn--outline{
+
+    color: #000;
+    padding: 8px 20px;
+    border-width: thick;
+    border-color: var(--narancasta);
+    background-color: transparent;
+    transition: all 0.3s ease-out;
+}
+
+.btn--size{
+    padding: 8px 20px;
+    font-size: 20px;
+}
+
+.btn--size:hover{
+    background: var(--narancasta);
+    color: var(--tamnoplava);
+    transition: all 0.3s ease-out;
+}
